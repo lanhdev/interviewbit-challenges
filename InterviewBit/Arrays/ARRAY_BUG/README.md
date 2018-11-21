@@ -1,5 +1,6 @@
 # Description:
 
+* Problem: [https://www.interviewbit.com/problems/arraybug](https://www.interviewbit.com/problems/arraybug)
 * Rotate the array A by B positions
 * Input
   ```
