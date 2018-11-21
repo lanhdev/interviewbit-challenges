@@ -4,9 +4,6 @@ class MySolution:
   # @param a : list of integers
   # @param b : integer
   # @return a list of integers
-  # We need to rotate array b times so loop b times
-  #   Take out first element
-  #   Append back to array
   def rotateArray(self, a, b):
     ret = []
     for i in xrange(b):
