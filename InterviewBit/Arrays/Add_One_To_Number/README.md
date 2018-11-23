@@ -5,7 +5,7 @@
 
 Given a non-negative number represented as an array of digits,
 
-add 1 to the number ( increment the number represented by the digits ).
+add 1 to the number (increment the number represented by the digits).
 
 The digits are stored such that the most significant digit is at the head of the list.
 
@@ -56,7 +56,7 @@ The number of digits increases by 1 when adding.
 
 This causes some complication as you would have to shift all digits by 1 to make space for the new digit in the most significant position.
 
-**_Tip:_** Try reversing the digits for the addition. Reverse them back after getting the result.
+_**Tip:** Try reversing the digits for the addition. Reverse them back after getting the result._
 
 Reverse the digits of the number to make your life easier.
 
