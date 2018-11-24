@@ -23,7 +23,7 @@ For this problem, return the maximum sum.
 
 Let us say `Ai, Ai+1 … Aj` is our optimal solution.
 
-Note that no prefix of the solution will ever have a negative sum.
+_Note that no prefix of the solution will ever have a negative sum._
 
 Let us say `Ai … Ak` prefix had a negative sum which means `Sum(Ai … Ak) < 0`
 
