@@ -22,7 +22,7 @@ So, we return 5.
 
 ## Solution:
 
-1. Brute force: O(N * N) complexity
+**1. Brute force:** _O(N * N) complexity_
 
 Initialize `max = 0`
 
@@ -32,7 +32,7 @@ If result larger than `max`, we store result to `max`
 
 Finally, return `max`
 
-2. Mathematic: O(N) complexity
+**2. Mathematic:** _O(N) complexity_
 
 From `f(i, j) = |A[i] - A[j]| + |i - j|`, we have 4 cases:
 
