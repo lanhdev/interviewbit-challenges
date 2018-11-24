@@ -5,11 +5,10 @@ class Solution
   # @param a : constant array of integers
   # @return an integer
   def maxSubArray(a)
-    n = a.size
-    largest = -1e9.to_i
+    largest = -Float::INFINITY
     sum = 0
-    (0...n).to_a.each do |idx|
-      sum += a[idx]
+    a.each do |num|
+      sum += num
       if sum > largest
         largest = sum
       end
@@ -27,14 +26,13 @@ class Solution
   # @param a : constant array of integers
   # @return an integer
   def maxSubArray(a)
-    n = a.size
-    largest = -1e9.to_i
+    largest = -Float::INFINITY
     sum = 0
     left = 0
     right = 0
     start = 0
-    (0...n).to_a.each do |idx|
-      sum += a[idx]
+    a.each do |num|
+      sum += num
       if sum > largest
         largest = sum
         left = start
