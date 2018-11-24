@@ -5,13 +5,13 @@ class Solution
   # @return an integer
   def maxArr(a)
     n = a.length
-    arr_1 = Array.new(n, 0) # Store (a[i] + i) for each i
-    arr_2 = Array.new(n, 0) # Store (a[i] - i) for each i
-    (0...n).to_a.each do |idx_i|
-      arr_1[idx_i] = a[idx_i] + idx_i
-      arr_2[idx_i] = a[idx_i] - idx_i
+    plus = Array.new(n, 0) # Store (a[i] + i) for each i
+    diff = Array.new(n, 0) # Store (a[i] - i) for each i
+    a.each_with_index do |num, idx|
+      plus[idx] = num + idx
+      diff[idx] = num - idx
     end
 
-    [(arr_1.max - arr_1.min).abs, (arr_2.max - arr_2.min).abs].max
+    [(plus.max - plus.min).abs, (diff.max - diff.min).abs].max
   end
 end
