@@ -32,12 +32,17 @@ No operation can give us more than three 1s in final string. So, we return empty
 
 ## Idea
 
-Note what is the net change in number of `1`s in string S when we flip bits of string S. 
+Focus on your input, let's say you store it in an array called `A`. This array will initially consist of zeros and ones.
 
-Say it has A `0`s and B `1`s. Eventually, there are B `0`s and A `1`s. So, number of `1`s increase by `A - B`. We want to choose a subarray which maximizes this.
+Now focus on an operation. Let us try to understand what an operation really does. An operation is executed on a segment (or subarray) of `A` defined by some left index `i` and some right index `j`. When you apply an operation on this segment all its elements are flipped. We want to find that segment, or subarray, defined by `i,j` such that if an operation is applied, then the total number of ones in `A` is maximized.
 
-Note, if we change `1`s to `-1`, then sum of values will give us A - B. Then, we have to find a subarray with maximum sum, which can be done via **Kadane’s Algorithm**.
+Having understood exactly what this problem is asking us to do, we can now change the formulation a little bit. When we make a operation and change some 0 to 1, we get a **_gain_** of 1. A gain basically refers to the fact that you just managed to create a 1, and 1s are good since the more you have, the better the score of the corresponding operation. If we change some 1 to 0, we get a gain of -1 respectively. Now let `G` be some array for which initially we have `G[i] = 1` if `A[i] = 0` and `G[i] = -1` if `A[i] = 1`.
+
+Suppose that you can somehow find the subarray of `G` that achieves the maximum overall gain `x`. And let `y` be the number of 1s that you originally have in `A`. The optimal score will then be equal to `x + y`.
+
+To find that subarray of G you can apply [**Kadane's algorithm**](https://en.wikipedia.org/wiki/Maximum_subarray_problem) that finds the subarray with the maximum sum (in our case overall gain) and runs in O(n) time while only using O(n) space. The general idea is to define two variables, `maxendinghere` and `maxsofar`. The first variable is updated incrementally and for some position `i` in your input array (`G` in this case) it says what is the maximum sum of a subarray ending in position `i`. And the second variable is used to remember the maximum value of `maxendinghere` during the course of the algorithm.
 
 ## Reference
 
 * [Maximize number of 0s by flipping a subarray](https://www.geeksforgeeks.org/maximize-number-0s-flipping-subarray)
+* [CodeForces - Flipping Game explaination and approach](https://codeforces.com/blog/entry/23287?#comment-277027)
