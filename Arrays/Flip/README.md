@@ -36,7 +36,7 @@ Focus on your input, let's say you store it in an array called `A`. This array w
 
 Now focus on an operation. Let us try to understand what an operation really does. An operation is executed on a segment (or subarray) of `A` defined by some left index `i` and some right index `j`. When you apply an operation on this segment all its elements are flipped. We want to find that segment, or subarray, defined by `i,j` such that if an operation is applied, then the total number of ones in `A` is maximized.
 
-Having understood exactly what this problem is asking us to do, we can now change the formulation a little bit. When we make a operation and change some 0 to 1, we get a **_gain_** of 1. A gain basically refers to the fact that you just managed to create a 1, and 1s are good since the more you have, the better the score of the corresponding operation. If we change some 1 to 0, we get a gain of -1 respectively. Now let `G` be some array for which initially we have `G[i] = 1` if `A[i] = 0` and `G[i] = -1` if `A[i] = 1`.
+Having understood exactly what this problem is asking us to do, we can now change the formulation a little bit. When we make an operation and change some 0 to 1, we get a **_gain_** of 1. A gain basically refers to the fact that you just managed to create a 1, and 1s are good since the more you have, the better the score of the corresponding operation. If we change some 1 to 0, we get a gain of -1 respectively. Now let `G` be some array for which initially we have `G[i] = 1` if `A[i] = 0` and `G[i] = -1` if `A[i] = 1`.
 
 Suppose that you can somehow find the subarray of `G` that achieves the maximum overall gain `x`. And let `y` be the number of 1s that you originally have in `A`. The optimal score will then be equal to `x + y`.
 
