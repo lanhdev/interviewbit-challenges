@@ -31,7 +31,7 @@ class Solution
     left = 0
     right = 0
     start = 0
-    a.each do |num|
+    a.each_with_index do |num, idx|
       sum += num
       if sum > largest
         largest = sum
