@@ -44,5 +44,5 @@ To find that subarray of G you can apply [**Kadane's algorithm**](https://en.wik
 
 ## Reference
 
-* [Maximize number of 0s by flipping a subarray](https://www.geeksforgeeks.org/maximize-number-0s-flipping-subarray)
-* [CodeForces - Flipping Game explaination and approach](https://codeforces.com/blog/entry/23287?#comment-277027)
+1. [Maximize number of 0s by flipping a subarray](https://www.geeksforgeeks.org/maximize-number-0s-flipping-subarray)
+2. [CodeForces - Flipping Game explaination and approach](https://codeforces.com/blog/entry/23287?#comment-277027)
