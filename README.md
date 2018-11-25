@@ -1,8 +1,7 @@
-# Algorithm Challenges:
+# Algorithm Challenges
 
 ## Practice:
 * [InterviewBit](https://www.interviewbit.com/courses/programming)
-* [LeetCode](https://leetcode.com/problemset/algorithms)
 
 ## References:
 * Books:
