@@ -37,3 +37,7 @@ Note what is the net change in number of `1`s in string S when we flip bits of s
 Say it has A `0`s and B `1`s. Eventually, there are B `0`s and A `1`s. So, number of `1`s increase by `A - B`. We want to choose a subarray which maximizes this.
 
 Note, if we change `1`s to `-1`, then sum of values will give us A - B. Then, we have to find a subarray with maximum sum, which can be done via **Kadane’s Algorithm**.
+
+## Reference
+
+* [Maximize number of 0s by flipping a subarray](https://www.geeksforgeeks.org/maximize-number-0s-flipping-subarray)
