@@ -37,3 +37,8 @@ Now process the rows starting from row number 1.
 Row number 1 is obviously just 1.
 
 `For Row i, Row[i][0] = Row[i][i] = 1. And Row[i][j] = Row[i - 1][j] + Row[i - 1][j - 1], when j belongs to [1, i)`
+
+## Reference:
+
+1. [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle)
+2. [GeeksForGeeks - Pascal’s Triangle](https://www.geeksforgeeks.org/pascal-triangle)
