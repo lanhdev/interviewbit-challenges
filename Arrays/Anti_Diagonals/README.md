@@ -42,7 +42,7 @@ Example:
 ```
 ## Approach
 
-1. My solution:
+**1. My solution:**
 
 With `N * N` square matrix, arrays of its anti-diagonals has `2 * N - 1` elements
 
@@ -51,7 +51,7 @@ For element `r` of array result, `r` is sum of `i` (row number) and `j` (column 
 From above observation, we can loop `r` from `0` to `2 * N - 1` and consider 2 cases:
 `r < N` and `r >= N`
 
-2. InterviewBit:
+**2. InterviewBit:**
 
 With `N * N` square matrix, arrays of its anti-diagonals has `2 * N - 1` elements
 
@@ -59,8 +59,7 @@ For element `r` of array result, `r` is sum of `i` (row number) and `j` (column 
 
 We traverse through square matrix, at each element of matrix, calculate sum of `i + j` and push element at coordinate `[i][j]` to row r-th with `r = i + j`
 
-
-3. Practice 2 Code:
+**3. Practice 2 Code:**
 
 The point to observe here is that the sum of `i` (row number) and `j` (column number) is constant for each anti-diagonal. For example:
 ```
