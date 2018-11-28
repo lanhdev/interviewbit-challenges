@@ -57,7 +57,7 @@ With `N * N` square matrix, arrays of its anti-diagonals has `2 * N - 1` element
 
 For element `r` of array result, `r` is sum of `i` (row number) and `j` (column number) of square matrix
 
-We traverse through square matrix, at each element of matrix, calculate sum of `i + j` and push element at coordinate `[i][j]` to row r-th with `r = i + j`
+We traverse through square matrix, at each element of matrix, calculate sum of `i + j` and push element at coordinate `[i][j]` to row r-th of array result with `r = i + j`
 
 **3. Practice 2 Code:**
 
