@@ -16,11 +16,11 @@ That leaves us with four unique combinations:
 3. A, B, B
 4. B, B, B
 ```
-We can quickly deduce that case 3 and case 4 are not possible. The minimum value for range B is a little bit more than 1. If we have two numbers that are a little bit more than 1, then our total sum will be a little bit more than 2. Say the numbers are 0.4, 1.0001 and 1.0001. Here sum is greater than 2. Hence, these cases won't give us the required solution. Thus we can eliminate cases 3,4 and 5 (as they contain at least 2 numbers from range B).
+We can quickly deduce that case 3 and case 4 are not possible. The minimum value for range B is a little bit more than 1. If we have two numbers that are a little bit more than 1, then our total sum will be a little bit more than 2. Say the numbers are `0.4`, `1.0001` and `1.0001`. Here sum is greater than 2. Hence, these cases won't give us the required solution. Thus we can eliminate cases 3,4 and 5 (as they contain at least 2 numbers from range B).
 
 So then we only have to check case 1 and 2. Unfortunately, checking these cases is a little difficult. How can we determine if there are three numbers less than or equal to 1 that add up to a value greater than 1 and less than 2?
 
-Maybe we can tighten the restrictions on case 1 to make it easier to solve. What if we knew that every number in range A was less than 2/3? Then we could just select the three highest values in A. If those three numbers exist and add up to a value in the range (1,2), then case 1 is fulfilled.
+Maybe we can tighten the restrictions on case 1 to make it easier to solve. What if we knew that every number in range A was less than `2/3`? Then we could just select the three highest values in A. If those three numbers exist and add up to a value in the range `(1, 2)`, then case 1 is fulfilled.
 
 _Example:_ Let highest numbers in A be `0.333`, `0.55`, `0.44`. These three numbers lies in the required range `(1, 2)` and hence would give us the solution.
 
