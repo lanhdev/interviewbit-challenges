@@ -22,7 +22,7 @@ So then we only have to check case 1 and 2. Unfortunately, checking these cases 
 
 Maybe we can tighten the restrictions on case 1 to make it easier to solve. What if we knew that every number in range A was less than 2/3? Then we could just select the three highest values in A. If those three numbers exist and add up to a value in the range (1,2), then case 1 is fulfilled.
 
-Example: Let highest numbers in A be 0.333,0.55,0.44. These three numbers lies in the required range(1,2) and hence would give us the solution.
+_Example:_ Let highest numbers in A be `0.333`, `0.55`, `0.44`. These three numbers lies in the required range `(1, 2)` and hence would give us the solution.
 
 Now, since we tightened the restriction in case 1, we need another case to cover when values are in the range `[2/3, 1]`.
 
@@ -52,11 +52,11 @@ Now, what about case 2? Under case 2, we have two numbers in range A and one num
 
 Under case 3, we have two numbers in range A and one number in range C. We just have to worry about overflow (because to the presence of an integer from range C, we are sure that their sum will be greater than 1). To avoid overflow, let's suppose that we select the two smallest values in A and the smallest value in C. If the sum of those numbers is in the range `(1, 2)`, then this case has occurred.
 
-Case 4 will be similar to case 2. Under case 4, we have one number in range A and two numbers in range B. We have to worry about overflow. To avoid overflow, let's suppose that we select the two smallest values in BB. Let's call the sum of those numbers s. The range of ss will be `[4/3, 2]`. So we just need to determine if there is a value in A that is less than 2−s. Not bad.
+Case 4 will be similar to case 2. Under case 4, we have one number in range A and two numbers in range B. We have to worry about overflow. To avoid overflow, let's suppose that we select the two smallest values in B. Let's call the sum of those numbers s. The range of ss will be `[4/3, 2]`. So we just need to determine if there is a value in A that is less than 2−s. Not bad.
 
 Case 5 is pretty easy as well. We have to worry about overflow. To avoid overflow, let's suppose that we select the smallest value in A, the smallest value in B, and the smallest value in C. If the sum of those numbers is in the range (1,2), then this case has occurred.
 
-So, to solve the problem, we just check to see if case 1, 2, 3, 4, or 5 is satisfied. Each case can be checked in O(n) time.
+So, to solve the problem, we just check to see if case 1, 2, 3, 4, or 5 is satisfied. Each case can be checked in `O(n)` time.
 
 We can conclude that for all the 5 possible cases, we just need 3 largest values in range A, 2 smallest in range B, 2 smallest in range A and the smallest in range C. There are a lot of methods, choose anyone to find them.
 
