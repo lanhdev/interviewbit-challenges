@@ -1,24 +1,24 @@
 # https:#www.interviewbit.com/problems/maximum-consecutive-gap
 
 # Sorting
-# class Solution
-#   # @param a : constant array of integers
-#   # @return an integer
-#   def maximumGap(a)
-#     n = a.size
-#     return 0 if n < 2
-#     a = a.sort
-#     prev_num = a.first
-#     max_gap = -1
-#     1.upto(n - 1).each do |idx|
-#       dist = a[idx] - prev_num
-#       max_gap = [max_gap, dist].max
-#       prev_num = a[idx]
-#     end
+class Solution
+  # @param a : constant array of integers
+  # @return an integer
+  def maximumGap(a)
+    n = a.size
+    return 0 if n < 2
+    a = a.sort
+    prev_num = a.first
+    max_gap = -1
+    1.upto(n - 1).each do |idx|
+      dist = a[idx] - prev_num
+      max_gap = [max_gap, dist].max
+      prev_num = a[idx]
+    end
 
-#     max_gap
-#   end
-# end
+    max_gap
+  end
+end
 
 class Solution
   # @param a : constant array of integers
@@ -51,9 +51,6 @@ class Solution
       # Filling/Updating minimum value of bucket
       min_bucket[idx] = [min_bucket[idx], num].min
     end
-
-    p max_bucket
-    p min_bucket
  
     # Finding maximum difference between maximum value 
     # of previous bucket minus minimum of current bucket. 
