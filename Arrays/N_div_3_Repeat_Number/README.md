@@ -58,4 +58,5 @@ Consequently, the answer will be one of the 2 elements left behind. If they are 
 ## Reference:
 * [GeeksforGeeks - N/3 repeated number in an array with O(1) space](https://www.geeksforgeeks.org/n3-repeated-number-array-o1-space)
 * [GeeksforGeeks - Majority Element](https://www.geeksforgeeks.org/majority-element)
+* [Gregable.com - Majority Voting Algorithm](https://gregable.com/2013/10/majority-vote-algorithm-find-majority.html)
 * [GeeksforGeeks - Given an array of of size n and a number k, find all elements that appear more than n/k times](https://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times)
