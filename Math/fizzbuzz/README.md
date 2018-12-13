@@ -2,6 +2,7 @@
 
 ## Problem:
 [https://www.interviewbit.com/problems/fizzbuzz](https://www.interviewbit.com/problems/fizzbuzz)
+
 Fizzbuzz is one of the most basic problems in the coding interview world. Try to write a small and elegant code for this problem. 
 
 Given a positive integer `A`, return an array of strings with all the integers from `1` to `N`. 
