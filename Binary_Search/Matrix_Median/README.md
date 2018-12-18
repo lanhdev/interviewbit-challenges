@@ -41,7 +41,7 @@ The idea is that for a number to be median there should be exactly `n / 2` numbe
 
 If we consider the `N * M` matrix as 1-D array then the median is the element of `((1 + N * M) / 2)`-th element.
 
-From example input, median is 5-th element of 1-D array which is `5`
+From example input, median is ((1 + 3 * 3) / 2)-th = 5-th element of 1-D array which is `5`
 
 Then consider `x` will be the median if `x` is an element of the matrix and `number of matrix elements ≤ x` equals `(1 + N * M) / 2`.
 
