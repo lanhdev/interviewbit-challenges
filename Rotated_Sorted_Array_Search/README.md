@@ -28,6 +28,44 @@ Target = 4
 
 ## Approach:
 
+This can be done in `O(logN)` using a slightly modified binary search.
+
+The interesting property of a sorted + rotated array is that when you divide it into two halves, atleast one of the two halves will always be sorted.
+
+```
+arr = [4,5,6,7,8,9,1,2,3]
+number of elements  = 9
+mid index = (0+8) / 2 = 4
+
+[4,5,6,7,8,9,1,2,3]
+         ^
+ left   mid  right
+```
+
+as seem right sub-array is not sorted while left sub-array is sorted.
+
+If mid happens to be the point of rotation them both left and right sub-arrays will be sorted.
+
+```
+[6,7,8,9,1,2,3,4,5]
+         ^
+ left   mid  right
+```
+
+But in any case one half(sub-array) must be sorted.
+
+We can easily know which half is sorted by comparing start and end element of each half.
+
+Once we find which half is sorted we can see if the key is present in that half - simple comparison with the extremes.
+
+If the key is present in that half we recursively call the function on that half
+
+else we recursively call our search on the other half.
+
+We are discarding one half of the array in each call which makes this algorithm `O(logN)`.
+
+Following is the algorithm:
+
 *1)* Find middle point `mid = (left + right) / 2`
 
 *2)* If `target` is present at middle point, return `mid`.
