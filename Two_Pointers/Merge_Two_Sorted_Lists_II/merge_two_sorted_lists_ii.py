@@ -30,3 +30,20 @@ class Solution:
       index += 1
 
     print(' '.join(map(str, res)) + ' ')
+
+class Solution:
+  # @param A : list of integers
+  # @param B : list of integers
+  def merge(self, A, B):
+    left = 0
+    right = 0
+    while left < len(A) and right < len(B):
+      if A[left] > B[right]:
+        A.insert(left, B[right])
+        right += 1
+      else:
+        left += 1
+    while right < n:
+      A.append(B[right])
+      right += 1
+    print(' '.join(map(str, A)) + ' ')
