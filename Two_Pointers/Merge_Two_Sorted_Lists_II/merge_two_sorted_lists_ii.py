@@ -43,7 +43,7 @@ class Solution:
         right += 1
       else:
         left += 1
-    while right < n:
+    while right < len(B):
       A.append(B[right])
       right += 1
     print(' '.join(map(str, A)) + ' ')
