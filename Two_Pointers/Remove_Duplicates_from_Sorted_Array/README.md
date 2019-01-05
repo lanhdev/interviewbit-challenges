@@ -66,3 +66,4 @@ for i in range(len):
 
 ## Reference:
 * [GeeksforGeeks - Remove duplicates from sorted array](https://www.geeksforgeeks.org/remove-duplicates-sorted-array)
+* [GoodTecher - LeetCode 26. Remove Duplicates from Sorted Array](http://www.goodtecher.com/leetcode-26-remove-duplicates-from-sorted-array)
