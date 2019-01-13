@@ -27,6 +27,17 @@ If there are multiple spaces between words, reduce them to a single space in the
 
 ## Approach:
 
+The problem can be solve by using two pointers. 
+
+[1] Traverse string from the end and skip trailing space if there is any until we encounter last character of a word, store it to pointer `right`
+
+[2] Duplicate pointer `left` from `right`, continue to traverse until we encounter a space, now we have start index and end index of a word. Add it to result
+
+[3] Store value of `left` pointer to `right` pointer and repeat step [1]
+
+Time complexity: `O(n)`
+Space complexity: `O(n)`
+
 One simple approach is a two-pass solution:
 
 - First pass to split the string by spaces into an array of words
